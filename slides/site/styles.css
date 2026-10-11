@@ -40,7 +40,7 @@ body {
 
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand-mark {
-  width: 42px; height: 42px;
+  width: 46px; height: 46px;
   display: grid; place-items: center;
   border-radius: 12px;
   overflow: hidden;
