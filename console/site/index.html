@@ -9,7 +9,9 @@
   * { box-sizing: border-box; }
   body { margin: 0; font-family: "DM Sans", "Space Grotesk", "Segoe UI", system-ui, sans-serif; background: oklch(0.145 0.011 195); color: oklch(0.955 0.006 160); }
   .wrap { max-width: 980px; margin: 0 auto; padding: 28px 20px 60px; }
-  h1 { font-size: 22px; margin: 0 0 4px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin: 0 0 4px; }
+  .brand svg { flex: none; }
+  h1 { font-size: 22px; margin: 0; }
   .sub { color: oklch(0.68 0.015 185); font-size: 13px; margin-bottom: 22px; }
   .card { background: oklch(0.19 0.011 194); border: 1px solid oklch(0.3 0.013 193); border-radius: 14px; padding: 18px; margin-bottom: 16px; }
   .card h2 { font-size: 14px; margin: 0 0 12px; color: oklch(0.78 0.01 190); text-transform: uppercase; letter-spacing: .06em; }
@@ -48,7 +50,14 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>Z Admin Console</h1>
+  <div class="brand">
+    <svg viewBox="0 0 512 512" width="34" height="34" role="img" aria-label="Z">
+      <rect x="24" y="24" width="464" height="464" rx="112" fill="#0b0b0d"/>
+      <path d="M159 163 H353 V203 L199 303 H353 V343 H159 V303 L313 203 H159 Z" fill="#f4f4f6"/>
+      <path d="M313 203 L199 303 L159 303 Z" fill="#f4cd4b"/>
+    </svg>
+    <h1>Z Admin Console</h1>
+  </div>
   <div class="sub">black box ops · access.z-chat.men</div>
 
   <div class="card" id="loginCard">
